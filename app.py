@@ -5,7 +5,7 @@ from sklearn.metrics.pairwise import cosine_similarity
 import streamlit as st
 
 # Load data
-data = pd.read_csv("C:\\Users\\Muneeza\\Downloads\\Job-Recommendation-System-main\\Job-Recommendation-System-main\\modified_jobs.csv")
+data = pd.read_csv("modified_jobs.csv")
 
 # Combine features
 data['combined_features'] = (
@@ -97,3 +97,4 @@ if st.button("Search") and user_input:
 
         else:
             st.warning("⚠️ No recommended jobs match the filters.")
+
